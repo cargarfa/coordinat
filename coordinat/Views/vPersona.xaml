@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="coordinat.Views.vPersona"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:coordinat.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="Page_Loaded"
+    xmlns:controls="using:Template10.Controls">
+<!--añado ultima fila para añadir uso de controles, voy a utilizar el pagecontrol-->
+
+   
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+        <ListView IsSynchronizedWithCurrentItem="False" ItemsSource="{Binding}" Grid.Column="0" Width="200" Margin="10,0,10,0">
+            <ListView>
+                <GridView>
+                   
+                    
+                </GridView>
+            </ListView>
+        </ListView>
+        <StackPanel Grid.Column="1" Margin="0,0,10,0"  VerticalAlignment="Center">
+            <RelativePanel HorizontalAlignment="Center" Margin="185,0,184.4,0">
+                <TextBox x:Name="lblIdPersona" TextWrapping="Wrap" Text="ID" HorizontalAlignment="Left" Width="Auto"/>
+                <TextBlock x:Name="txtIdPersona" Grid.Column="1" HorizontalAlignment="Right" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" RelativePanel.RightOf="lblIdPersona"/>
+            </RelativePanel>
+        </StackPanel>
+       
+    </Grid>
+</Page>

@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace coordinat
 {
+    #region AUTOMATICO
     /// Documentation on APIs used in this page:
     /// https://github.com/Windows-XAML/Template10/wiki
 
@@ -50,8 +51,10 @@ namespace coordinat
         public override async Task OnStartAsync(StartKind startKind, IActivatedEventArgs args)
         {
             // TODO: add your long-running task here
-            await NavigationService.NavigateAsync(typeof(Views.MainPage));
+            await NavigationService.NavigateAsync(typeof(Views.vPersona));
         }
+        #endregion
+
     }
 }
 

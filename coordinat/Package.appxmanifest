@@ -1,10 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity
-    Name="3c51efb8-cb84-4378-8791-ba39444eb4f4"
-    Publisher = "CN=carga"
-    Version = "1.0.0.0" /> 
-  <mp:PhoneIdentity PhoneProductId="3c51efb8-cb84-4378-8791-ba39444eb4f4" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <Identity Name="3c51efb8-cb84-4378-8791-ba39444eb4f4" Publisher="CN=carga" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="3c51efb8-cb84-4378-8791-ba39444eb4f4" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>coordinat</DisplayName>
     <PublisherDisplayName>carga</PublisherDisplayName>
@@ -27,6 +24,11 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
+    <Capability Name="internetClientServer" />
     <uap:Capability Name="userAccountInformation" />
+    <uap:Capability Name="picturesLibrary" />
+    <uap:Capability Name="appointments" />
+    <uap:Capability Name="videosLibrary" />
+    <DeviceCapability Name="microphone" />
   </Capabilities>
 </Package>
